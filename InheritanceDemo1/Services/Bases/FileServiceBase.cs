@@ -9,12 +9,12 @@
             Path = path;
         }
 
-        public string Read()
+        public virtual string Read()
         {
             return File.ReadAllText(Path);
         }
 
-        public void Write(string content)
+        public virtual void Write(string content)
         {
             File.WriteAllText(Path, content); 
         } 
